@@ -37,10 +37,12 @@ body {
 }
 
 .navLink {
-  @apply uppercase font-condensed font-bold text-2xl px-2 py-1 block cursor-pointer;
+  @apply relative uppercase font-condensed font-bold text-2xl px-2 py-1 block cursor-pointer;
   @apply text-blue-950 tracking-wide;
+  @apply after:absolute after:bottom-1.25 after:left-1/2 after:-translate-x-1/2 after:rounded-full after:h-0.5;
+  @apply after:w-0 hover:after:w-[calc(100%-1rem)] after:motion-safe:duration-150 ease-in-out after:bg-blue-950;
 }
 
 .navLink--faded {
-  @apply text-gray-400;
+  @apply text-gray-400 after:bg-gray-400;
 }

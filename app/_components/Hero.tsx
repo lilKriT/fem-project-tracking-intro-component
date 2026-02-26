@@ -25,7 +25,7 @@ const Hero = () => {
           <div className="flex justify-start items-center gap-8 mt-16">
             <Link
               href={"/#"}
-              className="bg-red-400 px-6 py-2 rounded-lg text-white uppercase font-condensed font-bold"
+              className="bg-red-400 px-6 py-2 rounded-lg text-white uppercase font-condensed font-bold hover:bg-red-300 motion-safe:duration-150 ease-in-out"
             >
               Schedule a demo
             </Link>

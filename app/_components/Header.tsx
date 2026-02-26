@@ -6,7 +6,13 @@ const Header = () => {
     <header className="z-10 fixed top-0 w-full flex justify-center items-center">
       <div className="max-w-7xl w-full flex justify-between items-center mx-8 mt-16">
         {/* Logo */}
-        <Image src={"/logo.svg"} alt="Our Logo" width={32} height={32} />
+        <Image
+          src={"/logo.svg"}
+          alt="Our Logo"
+          width={32}
+          height={32}
+          className="h-10 w-auto"
+        />
 
         {/* Navigation */}
         <nav>
