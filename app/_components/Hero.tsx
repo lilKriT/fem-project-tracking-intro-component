@@ -10,26 +10,29 @@ const Hero = () => {
 
         {/* Left column */}
         <div className="flex flex-col justify-center pr-4 py-32">
-          <h2 className="uppercase mt-8 maxw">
-            <span className="">New</span> Monograph Dashboard
+          <h2 className="uppercase mt-8 text-xl font-condensed text-gray-400 tracking-[.25rem]">
+            <span className="text-white bg-blue-950 px-4 py-2 rounded-full mr-2 font-bold tracking-normal">
+              New
+            </span>{" "}
+            Monograph Dashboard
           </h2>
 
           <h1 className="text-7xl font-condensed font-bold uppercase mt-4">
             Powerful insights into your team
           </h1>
 
-          <p className="mt-8">
+          <p className="text-gray-600 text-xl mt-8 max-w-[30ch]">
             Project planning and time tracking for agile teams
           </p>
 
           <div className="flex justify-start items-center gap-8 mt-16">
             <Link
               href={"/#"}
-              className="bg-red-400 px-6 py-2 rounded-lg text-white uppercase font-condensed font-bold hover:bg-red-300 motion-safe:duration-150 ease-in-out"
+              className="bg-red-400 px-8 py-3 rounded-lg text-white uppercase font-condensed font-bold hover:bg-red-300 motion-safe:duration-150 ease-in-out"
             >
               Schedule a demo
             </Link>
-            <span className="uppercase font-condensed tracking-[.3rem] text-blue-950">
+            <span className="uppercase font-condensed tracking-[.3rem] text-gray-500">
               to see a live preview
             </span>
           </div>
