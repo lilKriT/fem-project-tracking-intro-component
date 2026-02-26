@@ -6,15 +6,15 @@
 }
 
 @theme inline {
-  --color-background: var(--background);
+  /* --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-mono: var(--font-geist-mono); */
 
   /* Body - Barlow 400 */
   /* Headings, CTA, Navigation - Barlow Condensed 400, 700 */
-
-  /* Font 18px */
+  --font-sans: var(--font-barlow-sans);
+  --font-condensed: var(--font-barlow-condensed); /* Font 18px */
   --text-base: 1.125rem;
 
   /* Primary */
@@ -25,15 +25,13 @@
   --color-blue-100: hsl(207, 33%, 95%);
 }
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-} */
+* {
+  @apply outline outline-red-300;
+}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-white);
+  font-size: var(--text-base);
+  font-weight: 400;
+  font-family: var(--font-barlow), Arial, Helvetica, sans-serif;
 }
