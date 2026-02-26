@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const Header = () => {
   return (
-    <header className="z-10 fixed top-0 w-full flex justify-center items-center">
+    <header className="z-10 fixed top-0 left-0 w-full flex justify-center items-center">
       <div className="max-w-7xl w-full flex justify-between items-center mx-8 mt-16">
         {/* Logo */}
         <Image

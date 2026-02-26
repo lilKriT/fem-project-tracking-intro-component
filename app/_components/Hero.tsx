@@ -9,7 +9,7 @@ const Hero = () => {
         <div></div>
 
         {/* Left column */}
-        <div className="flex flex-col justify-center pr-4">
+        <div className="flex flex-col justify-center pr-4 py-32">
           <h2 className="uppercase mt-8 maxw">
             <span className="">New</span> Monograph Dashboard
           </h2>
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
 
         {/* Right column */}
-        <div className="bg-[url(/illustration-devices.svg)] bg-no-repeat bg-size-[130%] bg-position-[0_50%]">
+        <div className="relative bg-[url(/illustration-devices.svg)] bg-no-repeat bg-size-[130%] bg-position-[0_50%]">
           <div className="absolute w-full h-1/2 bg-blue-100 rounded-bl-[4vw] -z-10"></div>
         </div>
       </div>
