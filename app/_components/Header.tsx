@@ -80,23 +80,24 @@ const Header = () => {
         {/* Navigation - mobile */}
         <nav
           id="mobile-menu"
-          className={`${!open && "hidden"} md:hidden absolute left-0 right-0 top-full bg-white`}
+          aria-hidden={!open}
+          className={`${open ? "scale-100" : "scale-0"} ${!open && "pointer-events-none"} origin-top-right md:hidden absolute motion-safe:duration-150 ease-in-out left-0 right-0 top-20 flex justify-center items-center bg-white shadow-[0_0_25px] shadow-black/30 p-8`}
         >
-          <ul className="flex flex-col">
+          <ul className="flex flex-col gap-4">
             <li>
-              <Link href={"/#"} className="">
+              <Link href={"/#"} className="navLink">
                 Product
               </Link>
             </li>
 
             <li>
-              <Link href={"/#"} className="">
+              <Link href={"/#"} className="navLink">
                 Features
               </Link>
             </li>
 
             <li>
-              <Link href={"/#"} className="">
+              <Link href={"/#"} className="navLink">
                 Pricing
               </Link>
             </li>
@@ -106,7 +107,7 @@ const Header = () => {
             </li>
 
             <li>
-              <Link href={"/#"} className="">
+              <Link href={"/#"} className="navLink navLink--faded">
                 Login
               </Link>
             </li>
