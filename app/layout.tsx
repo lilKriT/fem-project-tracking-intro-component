@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Barlow, Barlow_Condensed } from "next/font/google";
 import "./globals.css";
+import Header from "./_components/Header";
 
 const barlowSans = Barlow({
   variable: "--font-barlow-sans",
@@ -29,6 +30,7 @@ export default function RootLayout({
       <body
         className={`${barlowSans.variable} ${barlowCondensed.variable} antialiased`}
       >
+        <Header />
         <main>{children}</main>
       </body>
     </html>

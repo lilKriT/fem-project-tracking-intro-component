@@ -35,3 +35,12 @@ body {
   font-weight: 400;
   font-family: var(--font-barlow), Arial, Helvetica, sans-serif;
 }
+
+.navLink {
+  @apply uppercase font-condensed font-bold text-2xl px-2 py-1 block cursor-pointer;
+  @apply text-blue-950 tracking-wide;
+}
+
+.navLink--faded {
+  @apply text-gray-400;
+}

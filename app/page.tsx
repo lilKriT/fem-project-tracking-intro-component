@@ -5,8 +5,6 @@ export default function Home() {
   return (
     <>
       <Hero />
-
-      <p>Product Features Pricing Login</p>
     </>
   );
 }

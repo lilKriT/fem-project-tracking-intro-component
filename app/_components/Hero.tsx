@@ -10,7 +10,7 @@ const Hero = () => {
 
         {/* Left column */}
         <div className="flex flex-col justify-center pr-4">
-          <h2 className="uppercase mt-16 maxw">
+          <h2 className="uppercase mt-8 maxw">
             <span className="">New</span> Monograph Dashboard
           </h2>
 
