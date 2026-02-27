@@ -83,7 +83,7 @@ const Header = () => {
           aria-hidden={!open}
           className={`${open ? "scale-100" : "scale-0"} ${!open && "pointer-events-none"} origin-top-right md:hidden absolute motion-safe:duration-150 ease-in-out left-0 right-0 top-20 flex justify-center items-center bg-white shadow-[0_0_25px] shadow-black/30 p-8`}
         >
-          <ul className="flex flex-col gap-4">
+          <ul className="w-full flex flex-col gap-4">
             <li>
               <Link href={"/#"} className="navLink">
                 Product
@@ -103,7 +103,8 @@ const Header = () => {
             </li>
 
             <li>
-              <div className="rounded-full bg-gray-300 w-2 aspect-square mt-1"></div>
+              {/* <div className="rounded-full bg-gray-300 w-2 aspect-square mt-1"></div> */}
+              <div className="rounded-full bg-gray-300 w-full h-0.5 mt-1"></div>
             </li>
 
             <li>
